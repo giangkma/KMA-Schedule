@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-color: #dde1e7;
+}
+
+input {
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94, 104, 121, 0.671) !important;
+    background: transparent !important;
+    outline: none;
+}
+input:focus {
+    outline: none;
+}
+
+.schedule-container {
+    background: #337ab7;
+    color: #ffffff;
+}
+.dx-tooltip-appointment-item-content-date {
+    color: #ee5a24;
+}
+.dx-tooltip-appointment-item-delete-button-container {
+    display: none;
+}
+.dx-scheduler .dx-scheduler-overlay-panel .dx-overlay-content {
+    position: relative;
+    background: #ffffff;
+    box-shadow: 3px 4px 6px #718093, -3px -4px 6px #71809350 !important;
+}
+.schedule-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+}
+.icon-account {
+    display: flex;
+    align-items: center;
+}
+.icon-account > p {
+    font-size: 1.3rem;
+}
+.icon-account-avatar > img {
+    width: 5rem;
+    box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.541);
+    border-radius: 50%;
+}
+.schedule-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    padding: 2rem;
+}
+.schedule-title > svg {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 0.5rem;
+}
+.schedule-title > p {
+    font-size: 2rem;
+}
+.MuiMenuItem-root {
+    font-size: 1.3rem !important;
+}
+.dx-scheduler.dx-widget.dx-visibility-change-handler {
+    height: 90rem;
+    width: 80%;
+    margin: 2rem auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.281),
+        -5px 5px 5px rgba(0, 0, 0, 0.281);
+}
+
+@media (max-width: 1024px) {
+    .dx-scheduler.dx-widget.dx-visibility-change-handler {
+        width: 95%;
+    }
+}
+@media (max-width: 768px) {
+    .schedule-title {
+        padding: 1.5rem;
+    }
+    .schedule-title > p {
+        font-size: 1.7rem;
+    }
+    .icon-account > p {
+        font-size: 1.3rem;
+        text-align: end;
+    }
+    .schedule-title > svg {
+        width: 4rem;
+        height: 4rem;
+        margin-right: 0.5rem;
+    }
+}
+@media (max-width: 500px) {
+    .dx-tooltip-appointment-item-content > div {
+        font-size: 1.3rem !important;
+    }
+    .dx-tooltip-appointment-item {
+        margin-left: 0 !important;
+    }
+    .dx-item-content.dx-list-item-content {
+        padding-left: 0 !important;
+    }
+}
+@media (max-width: 425px) {
+    .dx-tooltip-appointment-item-content > div {
+        font-size: 1rem !important;
+    }
+    .dx-tooltip-appointment-item {
+        margin-left: 0 !important;
+    }
+    .dx-tooltip-appointment-item-marker {
+        display: none;
+    }
+    .dx-item-content.dx-list-item-content {
+        padding-left: 0 !important;
+    }
+    .schedule-title {
+        padding: 1rem;
+    }
+    .schedule-title > p {
+        font-size: 1rem;
+    }
+    .icon-account > p {
+        font-size: 1rem;
+    }
+    .icon-account-avatar > img {
+        width: 3rem;
+    }
+    .schedule-title > svg {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 0.5rem;
+    }
+}
+@media (max-width: 350px) {
+    .dx-tooltip-appointment-item-content > div {
+        font-size: 1.1rem !important;
+    }
+}
