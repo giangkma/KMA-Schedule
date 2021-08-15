@@ -1,4 +1,4 @@
-Reactjs Template
+KMA Schedule
 
 ## Setup
 
