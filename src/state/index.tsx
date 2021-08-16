@@ -1,7 +1,7 @@
 import React, { FC, ReactNode } from 'react';
 import { combineReducers, ReducersMapObject } from 'redux';
 import { persistReducer, persistStore } from 'redux-persist';
-import sessionStorage from 'redux-persist/es/storage/session';
+import storage from 'redux-persist/es/storage';
 import { PersistGate } from 'redux-persist/integration/react';
 import { StateType } from 'typesafe-actions';
 import createStore from './createStore';
@@ -25,7 +25,7 @@ export type RootState = StateType<typeof rootReducer>;
 
 const persistConfig = {
     key: 'root',
-    storage: sessionStorage, //Using session storage so it removes user auth info when browser tab closes
+    storage: storage,
     whitelist: ['user'],
 };
 
