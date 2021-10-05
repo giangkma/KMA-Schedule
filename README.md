@@ -1,5 +1,5 @@
 KMA Schedule
-ddddd
+dddddd
 ## Setup
 
 -   Run `yarn` to install needed packages
