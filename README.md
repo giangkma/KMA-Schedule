@@ -4,7 +4,7 @@ KMA Schedule
 
 -   Run `yarn` to install needed packages
 -   `yarn init-env` to create default .env file
-
+d
 ## UI
 
 -   CSS framework: [tailwindcss](https://tailwindcss.com/)
