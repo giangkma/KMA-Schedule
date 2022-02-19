@@ -1,5 +1,5 @@
 /*
-Commit message format:ss
+Commit message format:
 
 '<type>(<scope>): <module> - <subject>'
 
